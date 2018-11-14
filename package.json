@@ -1,0 +1,34 @@
+{
+  "name": "artifact-cards-indexer",
+  "description": "Index Artifact Cards",
+  "keywords": [
+    "imba",
+    "Artifact"
+  ],
+  "author": "Kabie",
+  "bugs": "",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack",
+    "watch": "webpack --watch --progress --colors --display-modules"
+  },
+  "files": [],
+  "directories": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "imba": "git+https://github.com/somebee/imba"
+  },
+  "devDependencies": {
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
