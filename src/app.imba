@@ -21,12 +21,31 @@ tag CardRow < li
 
     return true
 
+  def setup
+    if data:is_red then dom:classList.add "colorRed"
+    if data:is_green then dom:classList.add "colorGreen"
+    if data:is_blue then dom:classList.add "colorBlue"
+    if data:is_black then dom:classList.add "colorBlack"
+
+    if data:rarity
+      dom:classList.add "rarity{data:rarity}"
+
+    if let cardType = data:card_type && data:card_type.replace(' ', '')
+      dom:classList.add "type{cardType}"
+
+    if data:sub_type
+      dom:classList.add "subType{data:sub_type}"
 
   def render
     <self>
-      <div.card_name> data:card_name:english
-      <div.card_type> data:card_type
-      <div.mana_cost> data:mana_cost
+      if let cardIconUrl = data:mini_image && data:mini_image:default
+        <div.cardIcon style="background-image: url({cardIconUrl});">
+      else
+        <div.cardIcon>
+
+      <div.cardType>
+      <div.cardCost> data:mana_cost or data:gold_cost
+      <div.cardName> data:card_name:english
 
 tag CardView
   def render
@@ -76,7 +95,7 @@ tag App
         <fieldset>
           <legend> 'Colors'
           for color in ['red', 'green', 'blue', 'black']
-            <div.checkbox.is_color.{color}>
+            <div.checkbox.color.{'is_'+color}>
               <input[query["is_{color}"]] type='checkbox'>
               <label>
 
@@ -91,7 +110,7 @@ tag App
               <label>
               console.log query:rarity
 
-      <ul> for card in @cards when card:matchs(query, @language)
+      <ul.CardList> for card in @cards when card:matchs(query, @language)
         card
 
       if viewingCard

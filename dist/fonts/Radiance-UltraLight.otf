@@ -1,0 +1,225 @@
+			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-33822635-14', 'auto', {
+					'sampleRate': 10				});
+				ga('set', 'dimension1', false );
+				ga('set', 'dimension2', 'External' );
+				ga('set', 'dimension3', 'home' );
+				ga('set', 'dimension4', "home\/{unmappedmethod}" );
+				ga('send', 'pageview');
+
+			</script>
+			<!DOCTYPE html>
+<html class=" responsive" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#171a21">
+
+	<title>Artifact</title>
+	<link rel="shortcut icon" href="https://steamcdn-a.akamaihd.net/apps/artifact/images/favicon.png" type="image/png">
+
+	<link href="https://playartifact.com/public/css/radiance.css?v=kuXHQ-Mug8mO" rel="stylesheet" type="text/css" >
+<link href="https://playartifact.com/public/css/artifact_news_posts.css?v=r_tNKJZSdnS6" rel="stylesheet" type="text/css" >
+<link href="https://playartifact.com/public/css/artifactsite.css?v=21p3lUWAEIek" rel="stylesheet" type="text/css" >
+<link href="https://playartifact.com/public/css/artifact.css?v=.3Vgt2L6uT1Wk" rel="stylesheet" type="text/css" >
+
+						<meta name="twitter:card" content="summary_large_image">
+			
+						<meta property="og:title" content="Artifact">
+					<meta property="twitter:title" content="Artifact">
+					<meta property="fb:app_id" content="105386699540688">
+					<meta property="og:site" content="Artifact">
+					<meta property="og:description" content="A collaboration between legendary game designer Richard Garfield and Valve, Artifact offers the deepest gameplay and the highest-fidelity experience ever seen in a trading card game.">
+					<meta property="og:locale" content="en_US">
+									<meta property="og:locale:alternate" content="en_US">
+					<meta property="og:locale:alternate" content="fr_FR">
+					<meta property="og:locale:alternate" content="de_DE">
+					<meta property="og:locale:alternate" content="it_IT">
+					<meta property="og:locale:alternate" content="jp_JP">
+					<meta property="og:locale:alternate" content="ko_KR">
+					<meta property="og:locale:alternate" content="pt_BR">
+					<meta property="og:locale:alternate" content="ru_RU">
+					<meta property="og:locale:alternate" content="zh_CN">
+					<meta property="og:locale:alternate" content="es_ES">
+					<meta property="og:locale:alternate" content="zh_TW">
+					<meta property="og:locale:alternate" content="es_LA">
+			
+	
+			<link rel="image_src" href="https://steamcdn-a.akamaihd.net/apps/artifact/images/announce/artifact_logo_image.jpg">
+		<meta property="twitter:image" content="https://steamcdn-a.akamaihd.net/apps/artifact/images/announce/artifact_logo_image.jpg">
+		<meta property="og:image" content="https://steamcdn-a.akamaihd.net/apps/artifact/images/announce/artifact_logo_image.jpg">
+					<meta property="og:image:secure" content="https://steamcdn-a.akamaihd.net/apps/artifact/images/announce/artifact_logo_image.jpg">
+				<meta name="twitter:card" content="summary_large_image">
+	
+	
+	
+	<script type="text/javascript" src="https://playartifact.com/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU" ></script>
+
+	<script>
+		$(document).ready(function(){
+			$('#languageSelector').each( function() {
+				$(this).hover( function () {
+						//show its submenu
+						$( this ).find( 'div' ).fadeIn( 'fast' );
+					},
+					function () {
+						//hide its submenu
+						$( this ).find( 'div' ).hide();
+					}
+				);
+			});
+		});
+	</script>
+
+</head>
+<body class="">
+
+<div id="global_header_bg"></div>
+<div id="global_header">
+	<div id="artifact_fade_left"></div>
+	<div class="full_page_content">
+		<div id="ArtifactHeader">
+			<a href="https://playartifact.com/">
+				<img src="https://steamcdn-a.akamaihd.net/apps/artifact/images/header/artifact_logo_header.png">
+			</a>
+		</div>
+		<div id="FollowLinkBtn">
+			<a href="https://store.steampowered.com/app/583950/Artifact/" target="_blank">
+				<span class="follow_on_steam">Follow On</span> <img src="https://steamcdn-a.akamaihd.net/apps/artifact/images/announce/steam_icon.png" class="follow_steam_logo">
+			</a>
+		</div>
+		<div id="languageSelector" class="DotaFont">
+			<a href="javascript:void(0)">Language</a> <img style="margin-bottom: 2px;" src="https://steamcdn-a.akamaihd.net/apps/artifact/images/header/small_arrow.png" width="5px" height="3px" border="0" /><br />
+			<div style="display:none;" id="languageList">
+									<a class="DotaFont languageItem" href="?l=english">English</a>
+									<a class="DotaFont languageItem" href="?l=french">Français (French)</a>
+									<a class="DotaFont languageItem" href="?l=german">Deutsch (German)</a>
+									<a class="DotaFont languageItem" href="?l=italian">Italiano (Italian)</a>
+									<a class="DotaFont languageItem" href="?l=japanese">日本語 (Japanese)</a>
+									<a class="DotaFont languageItem" href="?l=koreana">한국어 (Korean)</a>
+									<a class="DotaFont languageItem" href="?l=brazilian">Português - Brasil (Portuguese - Brazil)</a>
+									<a class="DotaFont languageItem" href="?l=russian">Русский (Russian)</a>
+									<a class="DotaFont languageItem" href="?l=schinese">简体中文 (Simplified Chinese)</a>
+									<a class="DotaFont languageItem" href="?l=spanish">Español - España (Spanish - Spain)</a>
+									<a class="DotaFont languageItem" href="?l=tchinese">繁體中文 (Traditional Chinese)</a>
+									<a class="DotaFont languageItem" href="?l=latam">Español - Latinoamérica (Spanish - Latin America)</a>
+							</div>
+		</div>
+	</div>
+	<div id="artifact_fade_right"></div>
+</div>
+<div id="under_header_spacer"></div>
+
+
+<div class="bg1 bg_container">
+    <div class="full_page_content">
+        <div id="video_container">
+			<video preload="preload"  id="header_video" autoplay loop muted>
+				<source src="https://playartifact.com/public/videos/blog_loop_bg.webm" type="video/webm"></source>
+			</video>
+            <img src="https://playartifact.com/public/images/blog_bg_still_ref.png" class="video_fallback_image">
+            <img src="https://playartifact.com/public/images/artifact_logo_top.png" class="artifact_logo_top">
+            <div class="bg1_title">COMING TO STEAM<br>11&middot;28&middot;2018</div>
+        </div>
+        <div id="HeaderImp1"></div>
+    </div>
+</div>
+<div class="bg2 bg_container">
+    <div class="full_page_content">
+        <div id="HeaderImp2"></div>
+        <div id="collaboration_section">
+            A collaboration between legendary game designer Richard Garfield and Valve, Artifact offers the deepest gameplay and the highest-fidelity experience <br> ever seen in a trading card game. <a href="https://playartifact.com/overview/" class="read_more_text">Read More</a>
+        </div>
+        <div id="main_contents">
+            <div id="official_news">
+				Official News            </div>
+            <div id="blog_posts_container">
+                <div id="blog_posts">
+					                        <a href="https://playartifact.com/news/1721959164054855755">
+                            <div class="single_blog_container">
+                                    <div id="blog_image_container">
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/32397832/882564828dcc6f79eb179a08843af189ea6a5f0e.png" class="blog_post_image">
+                                        <div class="blog_post_footer">
+                                            <div class="blog_post_footer_darken">
+                            <span class="blog_post_title">
+                                The ArtiFAQ [Updated]                            </span><br/><span class="blog_post_date">
+                                                                 November 10, 2018                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </a>
+						                        <a href="https://playartifact.com/news/1721959164048240640">
+                            <div class="single_blog_container">
+                                    <div id="blog_image_container">
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/32397832/882564828dcc6f79eb179a08843af189ea6a5f0e.png" class="blog_post_image">
+                                        <div class="blog_post_footer">
+                                            <div class="blog_post_footer_darken">
+                            <span class="blog_post_title">
+                                The ArtiFAQ                            </span><br/><span class="blog_post_date">
+                                                                 November 9, 2018                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </a>
+						                        <a href="https://playartifact.com/news/1721959164045465116">
+                            <div class="single_blog_container">
+                                    <div id="blog_image_container">
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/32397832/d61eead0b874304bc20ab3cf12e3c88cb3d3ae02.png" class="blog_post_image">
+                                        <div class="blog_post_footer">
+                                            <div class="blog_post_footer_darken">
+                            <span class="blog_post_title">
+                                Artifact Card Set and Deck Code APIs                            </span><br/><span class="blog_post_date">
+                                                                 November 9, 2018                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </a>
+						                        <a href="https://playartifact.com/news/1721959164030371909">
+                            <div class="single_blog_container">
+                                    <div id="blog_image_container">
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/32397832/3a6f97c0ef0190e995c96483544b6d88cc9fe6cc.jpg" class="blog_post_image">
+                                        <div class="blog_post_footer">
+                                            <div class="blog_post_footer_darken">
+                            <span class="blog_post_title">
+                                Richard Garfield on Upkeep Kills                            </span><br/><span class="blog_post_date">
+                                                                 November 8, 2018                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </a>
+						                </div>
+                <div id="follow_artifact_main">
+                    <a href="https://store.steampowered.com/app/583950/Artifact/" target="_blank"><div id="add_to_wishlist_big"><img src="https://playartifact.com/public/images/announce/steam_wishlist.jpg" class="add_to_wishlist_big_image"><div id="add_to_wishlist_big_text"><img src="https://playartifact.com/public/images/announce/steam_icon.png" class="follow_steam_logo add_to_wishlist_big_logo">Add to Wishlist</div></div></a>
+                    <!--<div id="twitter_flow">
+						<a class="twitter-timeline" data-width="306" data-height="600" data-theme="dark" data-link-color="#c9b08b" href="https://twitter.com/PlayArtifact?ref_src=twsrc%5Etfw">Tweets by PlayArtifact</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>-->
+                    <div id="follow_artifact_links">Follow Artifact                        <br/><a href="https://store.steampowered.com/app/583950/Artifact/" target="_blank"><img src="https://playartifact.com/public/images/announce/steam_logo.png" class="follow_logos"></a>
+                        <a href="https://twitter.com/playartifact/" target="_blank"><img src="https://playartifact.com/public/images/announce/twitter_logo.png" class="follow_logos"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg_footer bg_container">
+
+</div>
+</body>
+</html>
+
