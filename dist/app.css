@@ -135,23 +135,24 @@ ul.CardList {
 
 .checkbox label:before {
     content: '';
-    width: calc(1rem + 2px);
-    height: calc(1rem + 2px);
+    width: calc(2rem + 0px);
+    height: calc(2rem + 0px);
     display: block;
     box-sizing: border-box;
-    border-radius: 2px;
-    border: 1px solid transparent;
+    border-radius: 4px;
+    /* border: 2px solid transparent; */
     z-index: 0;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
-    top: calc((0% - (100% - 1rem)) - 8%);
+    /* top: calc((0% - (100% - 1rem)) - 8%); */
     background-color: transparent;
     opacity: 0.5;
+    box-shadow: inset gray 0px 0px 4px;
 }
 
 .checkbox :checked ~ label:before {
     opacity: 1.0;
-    box-shadow: gray 0px 0px 1px 1px;
+    box-shadow: gray 0px 0px 4px;
 }
 
 .checkbox.color.is_red label:before {
@@ -171,7 +172,7 @@ ul.CardList {
 }
 
 .checkbox.color.none label:before {
-    background-color: whitesmoke;
+    background-color: wheat;
 }
 
 
@@ -190,6 +191,32 @@ ul.CardList {
 .checkbox.rarity.Rare label:before {
     background-color: gold;
 }
+
+.checkbox.type label:before {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.checkbox.type.Hero label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_hero.png);
+}
+
+.checkbox.type.Creep label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_creep.png);
+}
+
+.checkbox.type.Spell label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_spell.png);
+}
+
+.checkbox.type.Improvement label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_improvement.png);
+}
+
+.checkbox.type.Item label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_consumable.png);
+}
+
 
 
 .CardRow {

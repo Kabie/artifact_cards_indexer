@@ -1,14 +1,11 @@
 tag CardRow < li
 
-  # when 'rarity'
-  #   return data:rarity == value
-  # else
-  #   if let field_value = data[field]
-  #     if let field_language_value = data[field][language]
-  #       return field_language_value.toLowerCase.search(value) >= 0
-  #     else
-  #       if typeof(field_value) == 'string'
-  #         return field_value.toLowerCase.search(value) >= 0
+  # if let field_value = data[field]
+  #   if let field_language_value = data[field][language]
+  #     return field_language_value.toLowerCase.search(value) >= 0
+  #   else
+  #     if typeof(field_value) == 'string'
+  #       return field_value.toLowerCase.search(value) >= 0
 
   def matchColor colors, noColor
     var hasColor = false
@@ -22,13 +19,27 @@ tag CardRow < li
     else
       noColor !== hasColor
 
-  def matchType type
-    return true
+  def matchType types
+    for type, is_type of types
+      if data:card_type
+        if is_type && data:card_type == type
+          return true
 
-  def matchRarity rarity
-    return true
+    return false
 
-  def matchs query, language
+  def matchRarity rarities
+    for rarity, is_rarity of rarities
+      if data:rarity
+        if is_rarity && data:rarity == rarity
+          return true
+      else
+        if rarity == 'Basic' && is_rarity
+          return true
+
+    return false
+
+
+  def matchs query
     if !matchColor(query:color, query:no_color)
       return false
 
@@ -74,14 +85,15 @@ tag CardView
 
 
 tag App
-  prop language default: 'english'
   prop query default: {
     text: ''
+    language: 'english'
     type: {
       Hero: true
       Creep: true
       Spell: true
       Improvement: true
+      Item: true
     }
     color: {
       is_red: true
@@ -89,7 +101,7 @@ tag App
       is_blue: true
       is_black: true
     }
-    no_color: false
+    no_color: true
     rarity: {
       Basic: true
       Common: true
@@ -121,19 +133,16 @@ tag App
     <self.vbox>
       <header.query>
         <input[query:text] placeholder='Search...'>
-        # <input[query:card_name] placeholder='Card name...'>
-        # <input[query:card_type] placeholder='Card type...'>
-
-
-        # <fieldset>
-        #   <legend> 'Type'
-        #   for type in ['red', 'green', 'blue', 'black']
-        #     <div.checkbox.color.{'is_'+color}>
-        #       <input[query["card_type"]] type='checkbox'>
-        #       <label>
 
         <fieldset>
-          <legend> 'Color'
+          # <legend> 'Type'
+          for type in ['Hero', 'Creep', 'Spell', 'Improvement', 'Item']
+            <div.checkbox.type.{type}>
+              <input[query:type[type]] type='checkbox'>
+              <label>
+
+        <fieldset>
+          # <legend> 'Color'
           for color in ['red', 'green', 'blue', 'black']
             <div.checkbox.color.{'is_'+color}>
               <input[query:color["is_{color}"]] type='checkbox'>
@@ -142,17 +151,14 @@ tag App
             <input[query:no_color] type='checkbox'>
             <label>
 
-        # <fieldset>
-        #   <legend> 'Rarity'
-        #   for rarity in ['Basic', 'Common', 'Uncommon', 'Rare']
-        #     <div.checkbox.rarity.{rarity}>
-        #       if rarity == query:rarity
-        #         <input[query:rarity] type='checkbox'>
-        #       else
-        #         <input[query:rarity] type='checkbox' value=rarity>
-        #       <label>
+        <fieldset>
+          # <legend> 'Rarity'
+          for rarity in ['Basic', 'Common', 'Uncommon', 'Rare']
+            <div.checkbox.rarity.{rarity}>
+              <input[query:rarity[rarity]] type='checkbox'>
+              <label>
 
-      <ul.CardList> for card in @cards when card:matchs(query, @language)
+      <ul.CardList> for card in @cards when card:matchs(query)
         card
 
       if viewingCard
