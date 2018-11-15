@@ -1,11 +1,15 @@
 tag CardRow < li
 
-  # if let field_value = data[field]
-  #   if let field_language_value = data[field][language]
-  #     return field_language_value.toLowerCase.search(value) >= 0
-  #   else
-  #     if typeof(field_value) == 'string'
-  #       return field_value.toLowerCase.search(value) >= 0
+  def matchText text, language
+    if data:card_name[language]?.search(text) >= 0
+      return true
+
+    if data:card_text[language]?.search(text) >= 0
+      return true
+
+    if data:illustrator?.search(text) >= 0
+      return true
+
 
   def matchColor colors, noColor
     var hasColor = false
@@ -49,6 +53,9 @@ tag CardRow < li
     if !matchRarity(query:rarity)
       return false
 
+    if query:text && !matchText(query:text, query:language)
+      return false
+
     return true
 
 
@@ -85,6 +92,7 @@ tag CardView
 
 
 tag App
+  prop searchText
   prop query default: {
     text: ''
     language: 'english'
@@ -113,6 +121,13 @@ tag App
   prop cards default: []
   prop viewingCard
 
+  def searchText= value
+    @searchText = value
+    if value
+      @query:text = RegExp.new(value, 'i')
+    else
+      @query:text = value
+
   def viewCard card
     viewingCard = card
 
@@ -132,7 +147,7 @@ tag App
   def render
     <self.vbox>
       <header.query>
-        <input[query:text] placeholder='Search...'>
+        <input[searchText] placeholder='Search...'>
 
         <fieldset>
           # <legend> 'Type'
