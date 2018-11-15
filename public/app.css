@@ -1,6 +1,4 @@
 html,body {
-    width: 100vw;
-    height: 100vh;
     margin: 0px;
     font-family: Radiance;
     position: relative;
@@ -76,8 +74,88 @@ ul.CardList {
     max-width: 80%;
     height: 800px;
     max-height: 90%;
-    background-color: rgba(255, 255, 255, 1);
 }
+
+.CardView .modal {
+    background-color: rgb(138, 138, 138);
+}
+
+
+.CardImage {
+    position: relative;
+    display: inline-block;
+}
+
+.CardImage .largeImage {
+    width: 263px;
+    height: 445px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+}
+
+.CardImage .ability {
+    display: block;
+    position: absolute;
+    top: 56%;
+    width: 25%;
+    height: 15%;
+    cursor: pointer;
+}
+
+.CardImage .ability:nth-of-type(1) {
+    left: 9%;
+}
+
+.CardImage .ability:nth-of-type(2) {
+    left: 37.5%;
+}
+
+.CardImage .ability:nth-of-type(3) {
+    left: 66%;
+}
+
+.CardImage .abilityText {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 82%;
+    height: 30%;
+    top: 24%;
+    left: 9%;
+    padding: 0.5rem;
+    visibility: hidden;
+}
+
+.CardImage .abilityText .abilityName {
+    font-size: 125%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.CardImage .abilityText .abilityType {
+    font-size: 105%;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.CardImage .abilityText .abilityDesc {
+    font-size: 85%;
+    margin-top: 0.5rem;
+    color: lightgoldenrodyellow;
+}
+
+
+.CardImage .ability:hover + .abilityText {
+    visibility: visible;
+}
+
+.CardImage .illustrator {
+    margin-top: 1rem;
+    text-align: center;
+}
+
 
 .query {
     position: sticky;
@@ -190,7 +268,7 @@ ul.CardList {
 }
 
 .checkbox.rarity.Rare label:before {
-    background-color: gold;
+    background-color: goldenrod;
 }
 
 .checkbox.type label:before {
@@ -218,6 +296,23 @@ ul.CardList {
     background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_consumable.png);
 }
 
+.checkbox.type.Armor label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_armor.png);
+
+}
+.checkbox.type.Weapon label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_weapon.png);
+
+}
+.checkbox.type.Accessory label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_health.png);
+
+}
+.checkbox.type.Consumable label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_consumable.png);
+
+}
+
 
 
 .CardRow {
@@ -243,32 +338,38 @@ ul.CardList {
 }
 
 .CardRow.rarityRare {
-    border-left-color: gold;
+    border-left-color: goldenrod;
 }
 
+.colorRed .CardImage .abilityText,
 .CardRow.colorRed {
     background: linear-gradient(to right, #612, #834 50%, transparent 120%)
 }
 
+.colorGreen .CardImage .abilityText,
 .CardRow.colorGreen {
     background: linear-gradient(to right, #253, #475 50%, transparent 120%)
 }
 
+.colorBlue .CardImage .abilityText,
 .CardRow.colorBlue {
     background: linear-gradient(to right, #136, #358 50%, transparent 120%)
 }
 
+.colorBlack .CardImage .abilityText,
 .CardRow.colorBlack {
     background: linear-gradient(to right, #333, #555 50%, transparent 120%)
 }
 
+.typeItem .CardImage .abilityText,
 .CardRow.typeItem {
     background: linear-gradient(to right, #542, #764 50%, transparent 120%)
 }
 
 .cardIcon,
 .cardType,
-.cardCost {
+.cardCost,
+.cardIngameImage {
     flex: 48px 0 0;
     background-size: contain;
     background-repeat: no-repeat;
@@ -276,6 +377,10 @@ ul.CardList {
 
 .cardCost {
     text-align: center;
+}
+
+.cardName {
+    text-indent: 1rem;
 }
 
 .cardStat {

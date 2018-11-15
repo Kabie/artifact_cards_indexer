@@ -3,15 +3,21 @@ import CardView from './CardView'
 
 tag App
   prop searchText
+  prop language default: 'english'
   prop query default: {
     text: ''
-    language: 'english'
     type: {
       Hero: true
       Creep: true
       Spell: true
       Improvement: true
       Item: true
+    }
+    sub_type: {
+      Armor: true
+      Weapon: true
+      Accessory: true
+      Consumable: true
     }
     color: {
       is_red: true
@@ -29,6 +35,7 @@ tag App
   }
   prop sets default: []
   prop cards default: []
+  prop cardsIndex default: {}
   prop viewingCard
 
   def searchText= value
@@ -49,7 +56,12 @@ tag App
 
     for set in @sets
       for card in set:card_list
-        @cards.push <CardRow[card] :click.viewCard(card)>
+        @cards.push <CardRow[card] language=language :click.viewCard(card)>
+        @cardsIndex[card:card_id] = card
+
+    for _, card of cardsIndex
+      for refCard in card:references
+        refCard:ref = @cardsIndex[refCard:card_id]
 
     Imba.commit
 
@@ -64,6 +76,13 @@ tag App
           for type in ['Hero', 'Creep', 'Spell', 'Improvement', 'Item']
             <div.checkbox.type.{type}>
               <input[query:type[type]] type='checkbox'>
+              <label>
+
+        <fieldset>
+          # <legend> 'SubType'
+          for sub_type in ['Armor', 'Weapon', 'Accessory', 'Consumable']
+            <div.checkbox.type.{sub_type}>
+              <input[query:sub_type[sub_type]] type='checkbox'>
               <label>
 
         <fieldset>
@@ -87,6 +106,6 @@ tag App
         card
 
       if viewingCard
-        <CardView[viewingCard] :click.self.viewCard(null)>
+        <CardView[viewingCard] language=language :click.self.viewCard(null)>
 
 Imba.mount <App>

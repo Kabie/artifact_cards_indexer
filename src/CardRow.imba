@@ -1,6 +1,7 @@
 export tag CardRow < li
+  prop language
 
-  def matchText text, language
+  def matchText text
     if data:card_name[language]?.search(text) >= 0
       return true
 
@@ -45,6 +46,14 @@ export tag CardRow < li
 
     return false
 
+  def matchSubType sub_types
+    for sub_type, is_sub_type of sub_types
+      if data:sub_type
+        if is_sub_type && data:sub_type == sub_type
+          return true
+
+    return false
+
   def matchRarity rarities
     for rarity, is_rarity of rarities
       if data:rarity
@@ -63,10 +72,13 @@ export tag CardRow < li
     if !matchType(query:type)
       return false
 
+    if data:sub_type && !matchSubType(query:sub_type)
+      return false
+
     if !matchRarity(query:rarity)
       return false
 
-    if query:text && !matchText(query:text, query:language)
+    if query:text && !matchText(query:text)
       return false
 
     return true
@@ -90,14 +102,19 @@ export tag CardRow < li
 
   def render
     <self>
-      if let cardIconUrl = data:mini_image && data:mini_image:default
+      if let cardIconUrl = data:mini_image?:default
         <div.cardIcon style="background-image: url({cardIconUrl});">
       else
         <div.cardIcon>
 
       <div.cardType>
-      <div.cardCost> data:mana_cost or data:gold_cost
-      <div.cardName> data:card_name:english
+
+      if let cardCost = data:mana_cost or data:gold_cost
+        <div.cardCost> cardCost
+      elif let ingameImageUrl = data:ingame_image?:default
+        <div.cardIngameImage style="background-image: url({ingameImageUrl});">
+
+      <div.cardName> data:card_name[language]
 
       <div.cardStat.Attack> data:attack
       <div.cardStat.Armor> data:armor
