@@ -11,10 +11,10 @@ module.exports = {
 	resolve: {
 		extensions: [".imba", ".js", ".json"]
 	},
-	entry: "./src/app.imba",
+	entry: "./src/App.imba",
 	devtool: 'inline-source-map',
 	devServer: {
-		contentBase: './dist'
+		contentBase: './public'
 	},
 	output: {  path: __dirname + '/dist', filename: "app.js" }
 }

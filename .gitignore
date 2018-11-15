@@ -2,7 +2,6 @@
 logs
 *.log
 .DS_Store
-dist/client.js
 
 # Runtime data
 pids
@@ -27,3 +26,5 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
+
+/dist
