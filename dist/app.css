@@ -90,6 +90,7 @@ ul.CardList {
     align-items: center;
     padding: 5px;
     background: #e8e8e8;
+    z-index: 999;
 }
 
 .query fieldset {
@@ -275,6 +276,36 @@ ul.CardList {
 
 .cardCost {
     text-align: center;
+}
+
+.cardStat {
+    flex: 48px 0 0;
+    text-shadow: gray 0 0 4px;
+    text-align: center;
+    align-self: flex-end;
+    position: relative;
+}
+
+.cardStat:after {
+    content: '';
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Attack:not(:empty):after {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_weapon.png);
+}
+.Armor:not(:empty):after {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_armor.png);
+}
+.HitPoints:not(:empty):after {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_health.png);
 }
 
 .typeHero .cardType { background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_hero.png);}

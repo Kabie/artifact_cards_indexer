@@ -10,6 +10,21 @@ tag CardRow < li
     if data:illustrator?.search(text) >= 0
       return true
 
+    if data:attack?.toString.search(text) >= 0
+      return true
+
+    if data:armor?.toString.search(text) >= 0
+      return true
+
+    if data:hit_points?.toString.search(text) >= 0
+      return true
+
+    if data:mana_cost?.toString.search(text) >= 0
+      return true
+
+    if data:gold_cost?.toString.search(text) >= 0
+      return true
+
 
   def matchColor colors, noColor
     var hasColor = false
@@ -84,6 +99,11 @@ tag CardRow < li
       <div.cardType>
       <div.cardCost> data:mana_cost or data:gold_cost
       <div.cardName> data:card_name:english
+
+      <div.cardStat.Attack> data:attack
+      <div.cardStat.Armor> data:armor
+      <div.cardStat.HitPoints> data:hit_points
+
 
 tag CardView
   def render
