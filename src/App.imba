@@ -1,36 +1,36 @@
 import CardRow from './CardRow'
 import CardView from './CardView'
 
-let languages = [
-  "english"
-  "german"
-  "french"
-  "italian"
-  "koreana"
-  "spanish"
-  "schinese"
-  "tchinese"
-  "russian"
-  "thai"
-  "japanese"
-  "portuguese"
-  "polish"
-  "danish"
-  "dutch"
-  "finnish"
-  "norwegian"
-  "swedish"
-  "hungarian"
-  "czech"
-  "romanian"
-  "turkish"
-  "brazilian"
-  "bulgarian"
-  "greek"
-  "ukrainian"
-  "latam"
-  "vietnamese"
-]
+let languages = {
+  english: "English"
+  german: "Deutsch"
+  french: "Français"
+  italian: "Italiano"
+  koreana: "한국어"
+  spanish: "Español"
+  schinese: "简体中文"
+  tchinese: "繁體中文"
+  russian: "Русский"
+  thai: "thai"
+  japanese: "日本語"
+  portuguese: "portuguese"
+  polish: "polish"
+  danish: "danish"
+  dutch: "dutch"
+  finnish: "finnish"
+  norwegian: "norwegian"
+  swedish: "swedish"
+  hungarian: "hungarian"
+  czech: "czech"
+  romanian: "romanian"
+  turkish: "turkish"
+  brazilian: "Português-Brasil"
+  bulgarian: "bulgarian"
+  greek: "greek"
+  ukrainian: "ukrainian"
+  latam: "Español - Latinoamérica"
+  vietnamese: "vietnamese"
+}
 
 tag App
   prop searchText
@@ -44,11 +44,13 @@ tag App
       Improvement: true
       Item: true
     }
+    otherTypes: false
     sub_type: {
       Armor: true
       Weapon: true
       Accessory: true
       Consumable: true
+      Deed: true
     }
     color: {
       is_red: true
@@ -56,13 +58,13 @@ tag App
       is_blue: true
       is_black: true
     }
-    no_color: true
+    noColor: true
     rarity: {
-      Basic: true
       Common: true
       Uncommon: true
       Rare: true
     }
+    noRarity: true
   }
   prop sets default: []
   prop cards default: []
@@ -126,44 +128,44 @@ tag App
     else
       noColor !== hasColor
 
-  def matchType card, types
-    for type, is_type of types
-      if card:card_type
-        if is_type && card:card_type == type
+  def matchType card, types, otherTypes
+    if card:card_type
+      switch types[card:card_type]
+        when true
           return true
+        when undefined
+          return otherTypes
 
-    return false
 
   def matchSubType card, sub_types
-    for sub_type, is_sub_type of sub_types
-      if card:sub_type
+    if card:sub_type
+      for sub_type, is_sub_type of sub_types
         if is_sub_type && card:sub_type == sub_type
           return true
 
     return false
 
-  def matchRarity card, rarities
-    for rarity, is_rarity of rarities
-      if card:rarity
-        if is_rarity && card:rarity == rarity
+  def matchRarity card, rarities, noRarity
+    if card:rarity
+      switch rarities[card:rarity]
+        when true
           return true
-      else
-        if rarity == 'Basic' && is_rarity
-          return true
-
-    return false
+        when undefined
+          return noRarity
+    else
+      return noRarity
 
   def matchs card, query
-    if !matchColor(card, query:color, query:no_color)
+    if !matchColor(card, query:color, query:noColor)
       return false
 
-    if !matchType(card, query:type)
+    if !matchType(card, query:type, query:otherTypes)
       return false
 
     if card:sub_type && !matchSubType(card, query:sub_type)
       return false
 
-    if !matchRarity(card, query:rarity)
+    if !matchRarity(card, query:rarity, query:noRarity)
       return false
 
     if query:text && !matchText(card, query:text)
@@ -171,6 +173,8 @@ tag App
 
     return true
 
+  def toggleItemDeed
+    query:sub_type:Deed = query:sub_type:Consumable
 
   def build
     for url in ['./data/card_set_0.C0748A17E2C08252A9CCE75BB593E62D71DCDA77.json',
@@ -198,43 +202,51 @@ tag App
 
         <fieldset>
           # <legend> 'Type'
+          <div.checkbox.type.Others>
+            <input[query:otherTypes] type='checkbox' title='Others'>
+            <label>
           for type in ['Hero', 'Creep', 'Spell', 'Improvement', 'Item']
             <div.checkbox.type.{type}>
-              <input[query:type[type]] type='checkbox'>
+              <input[query:type[type]] type='checkbox' title=type>
               <label>
 
         <fieldset>
           # <legend> 'SubType'
           for sub_type in ['Armor', 'Weapon', 'Accessory', 'Consumable']
             <div.checkbox.type.{sub_type}>
-              <input[query:sub_type[sub_type]] type='checkbox'>
+              <input[query:sub_type[sub_type]] type='checkbox' title=sub_type .change.toggleItemDeed>
               <label>
 
         <fieldset>
           # <legend> 'Color'
           for color in ['red', 'green', 'blue', 'black']
             <div.checkbox.color.{'is_'+color}>
-              <input[query:color["is_{color}"]] type='checkbox'>
+              <input[query:color["is_{color}"]] type='checkbox' title=color>
               <label>
           <div.checkbox.color.none>
-            <input[query:no_color] type='checkbox'>
+            <input[query:noColor] type='checkbox' title='No color'>
             <label>
 
         <fieldset>
           # <legend> 'Rarity'
-          for rarity in ['Basic', 'Common', 'Uncommon', 'Rare']
+          <div.checkbox.rarity.Basic>
+            <input[query:noRarity] type='checkbox' title='Basic'>
+            <label>
+
+          for rarity in ['Common', 'Uncommon', 'Rare']
             <div.checkbox.rarity.{rarity}>
-              <input[query:rarity[rarity]] type='checkbox'>
+              <input[query:rarity[rarity]] type='checkbox' title=rarity>
               <label>
 
-        <select[language].language :change.changeLanguage> for lang in languages
-          <option value=lang> lang
+        <select[language].language :change.changeLanguage>
+          for lang in Object.keys(languages)
+            <option value=lang> languages[lang]
 
       <ul.CardList>
         for card in @cards when matchs(card, query)
-          <CardRow[card] language=@language :click.viewCard(card)>
+          <CardRow[card] language=@language :tap.viewCard(card)>
 
       if viewingCard
-        <CardView[viewingCard] language=@language :click.self.viewCard(null)>
+        <CardView[viewingCard] language=@language :tap.self.viewCard(null)>
 
 Imba.mount <App>
