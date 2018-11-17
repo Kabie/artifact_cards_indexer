@@ -86,11 +86,15 @@ tag App
 
 
   def matchText card, text
-    if card:card_name[language]?.search(text) >= 0
+    if card:card_name[language]?.search(text) >= 0 or card:card_name:english?.search(text) >= 0
       return true
 
-    if card:card_text[language]?.search(text) >= 0
+    if card:card_text[language]?.search(text) >= 0 or card:card_text:english?.search(text) >= 0
       return true
+
+    for refCard in card:references
+      if ['includes', 'active_ability', 'passive_ability'].indexOf(refCard:ref_type) >= 0 and matchText(refCard:ref, text)
+        return true
 
     if card:illustrator?.search(text) >= 0
       return true

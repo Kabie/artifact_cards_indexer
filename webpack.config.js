@@ -12,7 +12,7 @@ module.exports = {
 		extensions: [".imba", ".js", ".json"]
 	},
 	entry: "./src/App.imba",
-	devtool: 'inline-source-map',
+	devtool: 'cheap-module-source-map',
 	devServer: {
 		contentBase: './public'
 	},
