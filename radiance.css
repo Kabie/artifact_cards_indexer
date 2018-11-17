@@ -1,0 +1,80 @@
+/*
+ Font: Radiance
+ */
+
+@font-face {
+	font-family: 'Radiance';
+	src: url('/fonts/Radiance-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Radiance';
+	src: url('/fonts/Radiance-Light.otf') format('opentype');
+	font-weight: 300; /* Light */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Radiance';
+	src: url('/fonts/Radiance-UltraLight.otf') format('opentype');
+	font-weight: 200; /* Ultra-Light / Thin */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Radiance';
+	src: url('/fonts/Radiance-Semibold.otf') format('opentype');
+	font-weight: 500; /* Medium */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Radiance';
+	src: url('/fonts/Radiance-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Radiance';
+	src: url('/fonts/Radiance-RegularItalic.otf') format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Radiance';
+	src: url('/fonts/Radiance-LightItalic.otf') format('opentype');
+	font-weight: 300; /* Light */
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Radiance';
+	src: url('/fonts/Radiance-BoldItalic.otf') format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Radiance';
+	src: url('/fonts/Radiance-Black.otf') format('opentype');
+	font-weight: 900; /* Black */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quattrocento';
+	src: url('/fonts/Quattrocento-Regular.ttf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quattrocento';
+	src: url('/fonts/Quattrocento-Bold.ttf') format('opentype');
+	font-weight: bolder;
+	font-style: normal;
+}

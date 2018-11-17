@@ -1,0 +1,433 @@
+html,body {
+    margin: 0px;
+    font-family: Radiance;
+    position: relative;
+}
+
+body {
+    flex-direction: column;
+    padding: 30px;
+    background-attachment: fixed;
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/deck_list_fullbg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 2500px 1176px;
+}
+
+:focus { outline: none !important; }
+
+.App {
+}
+
+.vbox {
+    display: flex;
+    flex-direction: column;
+}
+
+
+body,div,form,header,footer,input,button,fieldset {
+    box-sizing: border-box;
+}
+
+div,section,input,ul,main,article,.grow {
+    flex: 1 1 auto;
+}
+
+input {
+    display: block;
+    padding: 0px 12px;
+    background: transparent;
+    border: none;
+    font-size: inherit;
+    width: 50px;
+    height: 24px;
+}
+
+
+ul.CardList {
+    font-size: 20px;
+    list-style: none inside none;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.modal-overlay {
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    z-index: 1001;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: auto;
+    width: 1600px;
+    max-width: 80%;
+    height: 800px;
+    max-height: 90%;
+}
+
+.CardView .modal {
+    background-color: rgb(138, 138, 138);
+}
+
+
+.CardImage {
+    position: relative;
+    display: inline-block;
+}
+
+.CardImage .largeImage {
+    position: relative;
+    width: 263px;
+    height: 445px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+}
+
+.CardImage .ability {
+    display: block;
+    position: absolute;
+    top: 59%;
+    width: 28%;
+    height: 16%;
+    cursor: pointer;
+}
+
+.CardImage .ability:nth-of-type(1) {
+    left: 4%;
+}
+
+.CardImage .ability:nth-of-type(2) {
+    left: 36%;
+}
+
+.CardImage .ability:nth-of-type(3) {
+    left: 68%;
+}
+
+.CardImage .abilityText {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 92%;
+    height: 33%;
+    top: 23%;
+    left: 4%;
+    padding: 0.5rem;
+    visibility: hidden;
+}
+
+.CardImage .abilityText .abilityName {
+    font-size: 110%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.CardImage .abilityText .abilityType {
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.CardImage .abilityText .abilityDesc {
+    font-size: 90%;
+    margin-top: 0.5rem;
+    color: lightgoldenrodyellow;
+}
+
+
+.CardImage .ability:hover + .abilityText {
+    visibility: visible;
+}
+
+.CardImage .illustrator {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+.query {
+    position: sticky;
+    top: 0;
+    font-size: 22px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    background: #e8e8e8;
+    z-index: 999;
+}
+
+.query fieldset {
+    font-size: 16px;
+    padding: 5px 0 0 0;
+    margin: 0 0.5rem;
+    border: none;
+}
+
+.language {
+    height: 34px;
+    padding: 0 0.5rem;
+    font-size: 20px;
+    font-family: Radiance;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.checkbox:not(:last-child) {
+    margin-right: 0.3rem;
+}
+
+.checkbox input {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 1rem;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.checkbox label {
+    position: initial;
+    display: inline-block;
+    font-weight: normal;
+    margin: 0;
+    text-indent: 1.5rem;
+    min-width: calc(1rem + 2px);
+}
+
+.checkbox label:before {
+    content: '';
+    width: calc(2rem + 0px);
+    height: calc(2rem + 0px);
+    display: block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    left: 0;
+    background-color: transparent;
+    opacity: 0.5;
+    box-shadow: inset gray 0px 0px 4px;
+}
+
+.checkbox :checked ~ label:before {
+    opacity: 1.0;
+    box-shadow: gray 0px 0px 4px;
+}
+
+.checkbox.color.is_red label:before {
+    background-color: red;
+}
+
+.checkbox.color.is_green label:before {
+    background-color: green;
+}
+
+.checkbox.color.is_blue label:before {
+    background-color: blue;
+}
+
+.checkbox.color.is_black label:before {
+    background-color: black;
+}
+
+.checkbox.color.none label:before {
+    background-color: wheat;
+}
+
+
+.checkbox.rarity.Basic label:before {
+    background-color: white;
+}
+
+.checkbox.rarity.Common label:before {
+    background-color: brown;
+}
+
+.checkbox.rarity.Uncommon label:before {
+    background-color: silver;
+}
+
+.checkbox.rarity.Rare label:before {
+    background-color: goldenrod;
+}
+
+.checkbox.type label:before {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.checkbox.type.Hero label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_hero.png);
+}
+
+.checkbox.type.Creep label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_creep.png);
+}
+
+.checkbox.type.Spell label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_spell.png);
+}
+
+.checkbox.type.Improvement label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_improvement.png);
+}
+
+.checkbox.type.Item label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_consumable.png);
+}
+
+.checkbox.type.Armor label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_armor.png);
+
+}
+.checkbox.type.Weapon label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_weapon.png);
+
+}
+.checkbox.type.Accessory label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_health.png);
+
+}
+.checkbox.type.Consumable label:before {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_consumable.png);
+
+}
+
+
+
+.CardRow {
+    padding: 0;
+    line-height: 48px;
+    display: flex;
+    border-left: transparent solid 8px;
+    color: #ccc;
+    box-shadow: inset 0 0 2rem #222;
+}
+
+
+.CardRow {
+    border-left-color: white;
+}
+
+.CardRow.rarityCommon {
+    border-left-color: brown;
+}
+
+.CardRow.rarityUncommon {
+    border-left-color: silver;
+}
+
+.CardRow.rarityRare {
+    border-left-color: goldenrod;
+}
+
+.colorRed .CardImage .abilityText,
+.CardRow.colorRed {
+    background: linear-gradient(to right, #612, #834 50%, transparent 120%)
+}
+
+.colorGreen .CardImage .abilityText,
+.CardRow.colorGreen {
+    background: linear-gradient(to right, #253, #475 50%, transparent 120%)
+}
+
+.colorBlue .CardImage .abilityText,
+.CardRow.colorBlue {
+    background: linear-gradient(to right, #136, #358 50%, transparent 120%)
+}
+
+.colorBlack .CardImage .abilityText,
+.CardRow.colorBlack {
+    background: linear-gradient(to right, #333, #555 50%, transparent 120%)
+}
+
+.typeItem .CardImage .abilityText,
+.CardRow.typeItem {
+    background: linear-gradient(to right, #542, #764 50%, transparent 120%)
+}
+
+.cardIcon,
+.cardType,
+.cardCost,
+.cardIngameImage {
+    flex: 48px 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cardCost {
+    text-align: center;
+}
+
+.cardName {
+    text-indent: 1rem;
+}
+
+.cardStat {
+    flex: 48px 0 0;
+    text-shadow: gray 0 0 4px;
+    text-align: center;
+    align-self: flex-end;
+    position: relative;
+}
+
+.cardStat:after {
+    content: '';
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Attack:not(:empty):after {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_weapon.png);
+}
+.Armor:not(:empty):after {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_armor.png);
+}
+.HitPoints:not(:empty):after {
+    background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_health.png);
+}
+
+.typeHero .cardType { background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_hero.png);}
+.typeCreep .cardType { background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_creep.png);}
+.typeSpell .cardType { background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_spell.png);}
+.typeImprovement .cardType { background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_improvement.png);}
+.typeItem.subTypeArmor .cardType {background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_armor.png);}
+.typeItem.subTypeWeapon .cardType {background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_weapon.png);}
+.typeItem.subTypeAccessory .cardType {background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_health.png);}
+.typeItem.subTypeConsumable .cardType {background-image: url(https://steamcdn-a.akamaihd.net/apps/artifact/images/deck_art/card_type_consumable.png);}
