@@ -169,7 +169,8 @@ tag App
 
 
   def build
-    for url in ['/data/card_set_0.C0748A17E2C08252A9CCE75BB593E62D71DCDA77.json', '/data/card_set_1.130CC34F7AC434B206D832879328A0D91D312873.json']
+    for url in ['/data/card_set_0.C0748A17E2C08252A9CCE75BB593E62D71DCDA77.json',
+                '/data/card_set_1.130CC34F7AC434B206D832879328A0D91D312873.json']
       let res = await window.fetch url
       let json = await res.json
       @sets.push(json:card_set)
