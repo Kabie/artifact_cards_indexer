@@ -8,7 +8,7 @@ tag CardImage
 
   def render
     <self>
-      if let largeImageUrl = data:large_image?:default
+      if let largeImageUrl = data:large_image[@language] || data:large_image:default
         <div.largeImage style="background-image: url({largeImageUrl});">
           for refCard in data:references
             switch refCard:ref_type
@@ -49,7 +49,6 @@ export tag CardView
     if refedAcc.indexOf(card) < 0
       refedAcc.push card
       if card:large_image:default
-        console.log card
         acc.push card
 
       for refCard in card:references
@@ -69,6 +68,8 @@ export tag CardView
       <div.modal>
         <h2.cardName> data:card_name[@language]
 
+        <div.cardText>
+
         <div.cardImages>
           for imageCard in @refImageCards
-            <CardImage[imageCard] language=language>
+            <CardImage[imageCard] language=@language>
