@@ -177,8 +177,8 @@ tag App
     query:sub_type:Deed = query:sub_type:Consumable
 
   def build
-    for url in ['./data/card_set_0.5DFBBB9F063A1D842DAD7190C2ACDC0E56DF8895.json',
-                './data/card_set_1.CFC30664A2624B97F94582203175DC49D76EA716.json']
+    for url in ['./data/card_set_0.539E6544DC1F6BA280550CE79EEE287F5052498F.json',
+                './data/card_set_1.0B794D8C25D23952F5476DD5F665EB690711753F.json']
       let res = await window.fetch url
       let json = await res.json
       @sets.push(json:card_set)
@@ -244,9 +244,9 @@ tag App
 
       <ul.CardList>
         for card in @cards when matchs(card, query)
-          <CardRow[card] language=@language :tap.viewCard(card)>
+          <CardRow[card] language=@language :tap.left.viewCard(card)>
 
       if viewingCard
-        <CardView[viewingCard] language=@language :tap.self.viewCard(null)>
+        <CardView[viewingCard] language=@language :tap.left.self.viewCard(null)>
 
 Imba.mount <App>
