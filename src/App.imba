@@ -177,8 +177,8 @@ tag App
     query:sub_type:Deed = query:sub_type:Consumable
 
   def build
-    for url in ['./data/card_set_0.539E6544DC1F6BA280550CE79EEE287F5052498F.json',
-                './data/card_set_1.0B794D8C25D23952F5476DD5F665EB690711753F.json']
+    for url in ['./data/card_set_0.79824067E797DFFD5925FE05AB27CF5ACC88723F.json',
+                './data/card_set_1.134088E143B4C697AA334924195E1DFB24EC95C5.json']
       let res = await window.fetch url
       let json = await res.json
       @sets.push(json:card_set)
