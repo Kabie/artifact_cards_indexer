@@ -37,6 +37,687 @@
 },
 "card_list":[
 {
+"card_id":7000,
+"base_card_id":7000,
+"card_type":"Mutation",
+"card_name":{
+"english":"Mutation Holder",
+"german":"Mutation Holder",
+"french":"Mutation Holder",
+"italian":"Mutation Holder",
+"koreana":"Mutation Holder",
+"spanish":"Mutation Holder",
+"schinese":"Mutation Holder",
+"tchinese":"Mutation Holder",
+"russian":"Mutation Holder",
+"thai":"Mutation Holder",
+"japanese":"Mutation Holder",
+"portuguese":"Mutation Holder",
+"polish":"Mutation Holder",
+"danish":"Mutation Holder",
+"dutch":"Mutation Holder",
+"finnish":"Mutation Holder",
+"norwegian":"Mutation Holder",
+"swedish":"Mutation Holder",
+"hungarian":"Mutation Holder",
+"czech":"Mutation Holder",
+"romanian":"Mutation Holder",
+"turkish":"Mutation Holder",
+"brazilian":"Mutation Holder",
+"bulgarian":"Mutation Holder",
+"greek":"Mutation Holder",
+"ukrainian":"Mutation Holder",
+"latam":"Mutation Holder",
+"vietnamese":"Mutation Holder"
+},
+"card_text":{
+
+},
+"mini_image":{
+
+},
+"large_image":{
+
+},
+"ingame_image":{
+
+},
+"references":[
+
+]
+
+},
+{
+"card_id":7001,
+"base_card_id":7001,
+"card_type":"Mutation",
+"card_name":{
+"english":"Mana Boost",
+"german":"Mana Boost",
+"french":"Mana Boost",
+"italian":"Mana Boost",
+"koreana":"Mana Boost",
+"spanish":"Mana Boost",
+"schinese":"Mana Boost",
+"tchinese":"Mana Boost",
+"russian":"Mana Boost",
+"thai":"Mana Boost",
+"japanese":"Mana Boost",
+"portuguese":"Mana Boost",
+"polish":"Mana Boost",
+"danish":"Mana Boost",
+"dutch":"Mana Boost",
+"finnish":"Mana Boost",
+"norwegian":"Mana Boost",
+"swedish":"Mana Boost",
+"hungarian":"Mana Boost",
+"czech":"Mana Boost",
+"romanian":"Mana Boost",
+"turkish":"Mana Boost",
+"brazilian":"Mana Boost",
+"bulgarian":"Mana Boost",
+"greek":"Mana Boost",
+"ukrainian":"Mana Boost",
+"latam":"Mana Boost",
+"vietnamese":"Mana Boost"
+},
+"card_text":{
+"english":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"german":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"french":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"italian":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"koreana":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"spanish":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"schinese":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"tchinese":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"russian":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"thai":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"japanese":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"portuguese":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"polish":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"danish":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"dutch":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"finnish":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"norwegian":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"swedish":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"hungarian":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"czech":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"romanian":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"turkish":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"brazilian":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"bulgarian":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"greek":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"ukrainian":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"latam":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\"",
+"vietnamese":"Your towers in all lanes have +1 Mana.  Before the shopping phase, modify Mana Boost with \"Your towers in all lanes have +1 Mana.\""
+},
+"mini_image":{
+
+},
+"large_image":{
+
+},
+"ingame_image":{
+
+},
+"references":[
+
+]
+
+},
+{
+"card_id":7002,
+"base_card_id":7002,
+"card_type":"Mutation",
+"card_name":{
+"english":"Double Bounties",
+"german":"Double Bounties",
+"french":"Double Bounties",
+"italian":"Double Bounties",
+"koreana":"Double Bounties",
+"spanish":"Double Bounties",
+"schinese":"Double Bounties",
+"tchinese":"Double Bounties",
+"russian":"Double Bounties",
+"thai":"Double Bounties",
+"japanese":"Double Bounties",
+"portuguese":"Double Bounties",
+"polish":"Double Bounties",
+"danish":"Double Bounties",
+"dutch":"Double Bounties",
+"finnish":"Double Bounties",
+"norwegian":"Double Bounties",
+"swedish":"Double Bounties",
+"hungarian":"Double Bounties",
+"czech":"Double Bounties",
+"romanian":"Double Bounties",
+"turkish":"Double Bounties",
+"brazilian":"Double Bounties",
+"bulgarian":"Double Bounties",
+"greek":"Double Bounties",
+"ukrainian":"Double Bounties",
+"latam":"Double Bounties",
+"vietnamese":"Double Bounties"
+},
+"card_text":{
+"english":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"german":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"french":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"italian":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"koreana":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"spanish":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"schinese":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"tchinese":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"russian":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"thai":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"japanese":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"portuguese":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"polish":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"danish":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"dutch":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"finnish":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"norwegian":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"swedish":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"hungarian":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"czech":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"romanian":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"turkish":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"brazilian":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"bulgarian":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"greek":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"ukrainian":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"latam":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty.",
+"vietnamese":"Enemy heroes in all lanes have +5 Bounty.  Enemy creeps in all lanes have +1 Bounty."
+},
+"mini_image":{
+
+},
+"large_image":{
+
+},
+"ingame_image":{
+
+},
+"references":[
+
+]
+
+},
+{
+"card_id":7004,
+"base_card_id":7004,
+"card_type":"Mutation",
+"card_name":{
+"english":"One Quarter Dead",
+"german":"One Quarter Dead",
+"french":"One Quarter Dead",
+"italian":"One Quarter Dead",
+"koreana":"One Quarter Dead",
+"spanish":"One Quarter Dead",
+"schinese":"One Quarter Dead",
+"tchinese":"One Quarter Dead",
+"russian":"One Quarter Dead",
+"thai":"One Quarter Dead",
+"japanese":"One Quarter Dead",
+"portuguese":"One Quarter Dead",
+"polish":"One Quarter Dead",
+"danish":"One Quarter Dead",
+"dutch":"One Quarter Dead",
+"finnish":"One Quarter Dead",
+"norwegian":"One Quarter Dead",
+"swedish":"One Quarter Dead",
+"hungarian":"One Quarter Dead",
+"czech":"One Quarter Dead",
+"romanian":"One Quarter Dead",
+"turkish":"One Quarter Dead",
+"brazilian":"One Quarter Dead",
+"bulgarian":"One Quarter Dead",
+"greek":"One Quarter Dead",
+"ukrainian":"One Quarter Dead",
+"latam":"One Quarter Dead",
+"vietnamese":"One Quarter Dead"
+},
+"card_text":{
+"english":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"german":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"french":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"italian":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"koreana":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"spanish":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"schinese":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"tchinese":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"russian":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"thai":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"japanese":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"portuguese":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"polish":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"danish":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"dutch":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"finnish":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"norwegian":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"swedish":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"hungarian":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"czech":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"romanian":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"turkish":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"brazilian":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"bulgarian":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"greek":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"ukrainian":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"latam":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health.",
+"vietnamese":"Your towers in all lanes have -10 Health.  Your ancients in all lanes have -10 Health."
+},
+"mini_image":{
+
+},
+"large_image":{
+
+},
+"ingame_image":{
+
+},
+"references":[
+
+]
+
+},
+{
+"card_id":7006,
+"base_card_id":7006,
+"card_type":"Mutation",
+"card_name":{
+"english":"One Scroll, Please",
+"german":"One Scroll, Please",
+"french":"One Scroll, Please",
+"italian":"One Scroll, Please",
+"koreana":"One Scroll, Please",
+"spanish":"One Scroll, Please",
+"schinese":"One Scroll, Please",
+"tchinese":"One Scroll, Please",
+"russian":"One Scroll, Please",
+"thai":"One Scroll, Please",
+"japanese":"One Scroll, Please",
+"portuguese":"One Scroll, Please",
+"polish":"One Scroll, Please",
+"danish":"One Scroll, Please",
+"dutch":"One Scroll, Please",
+"finnish":"One Scroll, Please",
+"norwegian":"One Scroll, Please",
+"swedish":"One Scroll, Please",
+"hungarian":"One Scroll, Please",
+"czech":"One Scroll, Please",
+"romanian":"One Scroll, Please",
+"turkish":"One Scroll, Please",
+"brazilian":"One Scroll, Please",
+"bulgarian":"One Scroll, Please",
+"greek":"One Scroll, Please",
+"ukrainian":"One Scroll, Please",
+"latam":"One Scroll, Please",
+"vietnamese":"One Scroll, Please"
+},
+"card_text":{
+"english":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"german":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"french":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"italian":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"koreana":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"spanish":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"schinese":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"tchinese":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"russian":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"thai":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"japanese":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"portuguese":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"polish":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"danish":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"dutch":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"finnish":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"norwegian":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"swedish":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"hungarian":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"czech":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"romanian":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"turkish":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"brazilian":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"bulgarian":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"greek":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"ukrainian":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"latam":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand.",
+"vietnamese":"<span style='font-weight:bold;color:#ffffff;'>Play Effect:</span>  Put a <span style='font-weight:bold;color:#ffffff;'>Town Portal Scroll</span> card into your hand."
+},
+"mini_image":{
+
+},
+"large_image":{
+
+},
+"ingame_image":{
+
+},
+"references":[
+{
+"card_id":3006,
+"ref_type":"references"
+}
+]
+
+},
+{
+"card_id":7007,
+"base_card_id":7007,
+"card_type":"Mutation",
+"card_name":{
+"english":"Everyone's Fast",
+"german":"Everyone's Fast",
+"french":"Everyone's Fast",
+"italian":"Everyone's Fast",
+"koreana":"Everyone's Fast",
+"spanish":"Everyone's Fast",
+"schinese":"Everyone's Fast",
+"tchinese":"Everyone's Fast",
+"russian":"Everyone's Fast",
+"thai":"Everyone's Fast",
+"japanese":"Everyone's Fast",
+"portuguese":"Everyone's Fast",
+"polish":"Everyone's Fast",
+"danish":"Everyone's Fast",
+"dutch":"Everyone's Fast",
+"finnish":"Everyone's Fast",
+"norwegian":"Everyone's Fast",
+"swedish":"Everyone's Fast",
+"hungarian":"Everyone's Fast",
+"czech":"Everyone's Fast",
+"romanian":"Everyone's Fast",
+"turkish":"Everyone's Fast",
+"brazilian":"Everyone's Fast",
+"bulgarian":"Everyone's Fast",
+"greek":"Everyone's Fast",
+"ukrainian":"Everyone's Fast",
+"latam":"Everyone's Fast",
+"vietnamese":"Everyone's Fast"
+},
+"card_text":{
+"english":"Allied heroes in all lanes have Rapid Deployment.",
+"german":"Allied heroes in all lanes have Rapid Deployment.",
+"french":"Allied heroes in all lanes have Rapid Deployment.",
+"italian":"Allied heroes in all lanes have Rapid Deployment.",
+"koreana":"Allied heroes in all lanes have Rapid Deployment.",
+"spanish":"Allied heroes in all lanes have Rapid Deployment.",
+"schinese":"Allied heroes in all lanes have Rapid Deployment.",
+"tchinese":"Allied heroes in all lanes have Rapid Deployment.",
+"russian":"Allied heroes in all lanes have Rapid Deployment.",
+"thai":"Allied heroes in all lanes have Rapid Deployment.",
+"japanese":"Allied heroes in all lanes have Rapid Deployment.",
+"portuguese":"Allied heroes in all lanes have Rapid Deployment.",
+"polish":"Allied heroes in all lanes have Rapid Deployment.",
+"danish":"Allied heroes in all lanes have Rapid Deployment.",
+"dutch":"Allied heroes in all lanes have Rapid Deployment.",
+"finnish":"Allied heroes in all lanes have Rapid Deployment.",
+"norwegian":"Allied heroes in all lanes have Rapid Deployment.",
+"swedish":"Allied heroes in all lanes have Rapid Deployment.",
+"hungarian":"Allied heroes in all lanes have Rapid Deployment.",
+"czech":"Allied heroes in all lanes have Rapid Deployment.",
+"romanian":"Allied heroes in all lanes have Rapid Deployment.",
+"turkish":"Allied heroes in all lanes have Rapid Deployment.",
+"brazilian":"Allied heroes in all lanes have Rapid Deployment.",
+"bulgarian":"Allied heroes in all lanes have Rapid Deployment.",
+"greek":"Allied heroes in all lanes have Rapid Deployment.",
+"ukrainian":"Allied heroes in all lanes have Rapid Deployment.",
+"latam":"Allied heroes in all lanes have Rapid Deployment.",
+"vietnamese":"Allied heroes in all lanes have Rapid Deployment."
+},
+"mini_image":{
+
+},
+"large_image":{
+
+},
+"ingame_image":{
+
+},
+"references":[
+
+]
+
+},
+{
+"card_id":7009,
+"base_card_id":7009,
+"card_type":"Mutation",
+"card_name":{
+"english":"Misty World",
+"german":"Misty World",
+"french":"Misty World",
+"italian":"Misty World",
+"koreana":"Misty World",
+"spanish":"Misty World",
+"schinese":"Misty World",
+"tchinese":"Misty World",
+"russian":"Misty World",
+"thai":"Misty World",
+"japanese":"Misty World",
+"portuguese":"Misty World",
+"polish":"Misty World",
+"danish":"Misty World",
+"dutch":"Misty World",
+"finnish":"Misty World",
+"norwegian":"Misty World",
+"swedish":"Misty World",
+"hungarian":"Misty World",
+"czech":"Misty World",
+"romanian":"Misty World",
+"turkish":"Misty World",
+"brazilian":"Misty World",
+"bulgarian":"Misty World",
+"greek":"Misty World",
+"ukrainian":"Misty World",
+"latam":"Misty World",
+"vietnamese":"Misty World"
+},
+"card_text":{
+"english":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"german":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"french":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"italian":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"koreana":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"spanish":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"schinese":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"tchinese":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"russian":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"thai":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"japanese":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"portuguese":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"polish":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"danish":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"dutch":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"finnish":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"norwegian":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"swedish":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"hungarian":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"czech":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"romanian":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"turkish":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"brazilian":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"bulgarian":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"greek":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"ukrainian":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"latam":"After the hero deployment phase, modify each ally in all lanes with +1 Attack.",
+"vietnamese":"After the hero deployment phase, modify each ally in all lanes with +1 Attack."
+},
+"mini_image":{
+
+},
+"large_image":{
+
+},
+"ingame_image":{
+
+},
+"references":[
+
+]
+
+},
+{
+"card_id":7010,
+"base_card_id":7010,
+"card_type":"Mutation",
+"card_name":{
+"english":"Gold Rush",
+"german":"Gold Rush",
+"french":"Gold Rush",
+"italian":"Gold Rush",
+"koreana":"Gold Rush",
+"spanish":"Gold Rush",
+"schinese":"Gold Rush",
+"tchinese":"Gold Rush",
+"russian":"Gold Rush",
+"thai":"Gold Rush",
+"japanese":"Gold Rush",
+"portuguese":"Gold Rush",
+"polish":"Gold Rush",
+"danish":"Gold Rush",
+"dutch":"Gold Rush",
+"finnish":"Gold Rush",
+"norwegian":"Gold Rush",
+"swedish":"Gold Rush",
+"hungarian":"Gold Rush",
+"czech":"Gold Rush",
+"romanian":"Gold Rush",
+"turkish":"Gold Rush",
+"brazilian":"Gold Rush",
+"bulgarian":"Gold Rush",
+"greek":"Gold Rush",
+"ukrainian":"Gold Rush",
+"latam":"Gold Rush",
+"vietnamese":"Gold Rush"
+},
+"card_text":{
+"english":"Before the shopping phase, get 9 gold.",
+"german":"Before the shopping phase, get 9 gold.",
+"french":"Before the shopping phase, get 9 gold.",
+"italian":"Before the shopping phase, get 9 gold.",
+"koreana":"Before the shopping phase, get 9 gold.",
+"spanish":"Before the shopping phase, get 9 gold.",
+"schinese":"Before the shopping phase, get 9 gold.",
+"tchinese":"Before the shopping phase, get 9 gold.",
+"russian":"Before the shopping phase, get 9 gold.",
+"thai":"Before the shopping phase, get 9 gold.",
+"japanese":"Before the shopping phase, get 9 gold.",
+"portuguese":"Before the shopping phase, get 9 gold.",
+"polish":"Before the shopping phase, get 9 gold.",
+"danish":"Before the shopping phase, get 9 gold.",
+"dutch":"Before the shopping phase, get 9 gold.",
+"finnish":"Before the shopping phase, get 9 gold.",
+"norwegian":"Before the shopping phase, get 9 gold.",
+"swedish":"Before the shopping phase, get 9 gold.",
+"hungarian":"Before the shopping phase, get 9 gold.",
+"czech":"Before the shopping phase, get 9 gold.",
+"romanian":"Before the shopping phase, get 9 gold.",
+"turkish":"Before the shopping phase, get 9 gold.",
+"brazilian":"Before the shopping phase, get 9 gold.",
+"bulgarian":"Before the shopping phase, get 9 gold.",
+"greek":"Before the shopping phase, get 9 gold.",
+"ukrainian":"Before the shopping phase, get 9 gold.",
+"latam":"Before the shopping phase, get 9 gold.",
+"vietnamese":"Before the shopping phase, get 9 gold."
+},
+"mini_image":{
+
+},
+"large_image":{
+
+},
+"ingame_image":{
+
+},
+"references":[
+
+]
+
+},
+{
+"card_id":7012,
+"base_card_id":7012,
+"card_type":"Mutation",
+"card_name":{
+"english":"The Factory",
+"german":"The Factory",
+"french":"The Factory",
+"italian":"The Factory",
+"koreana":"The Factory",
+"spanish":"The Factory",
+"schinese":"The Factory",
+"tchinese":"The Factory",
+"russian":"The Factory",
+"thai":"The Factory",
+"japanese":"The Factory",
+"portuguese":"The Factory",
+"polish":"The Factory",
+"danish":"The Factory",
+"dutch":"The Factory",
+"finnish":"The Factory",
+"norwegian":"The Factory",
+"swedish":"The Factory",
+"hungarian":"The Factory",
+"czech":"The Factory",
+"romanian":"The Factory",
+"turkish":"The Factory",
+"brazilian":"The Factory",
+"bulgarian":"The Factory",
+"greek":"The Factory",
+"ukrainian":"The Factory",
+"latam":"The Factory",
+"vietnamese":"The Factory"
+},
+"card_text":{
+"english":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"german":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"french":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"italian":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"koreana":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"spanish":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"schinese":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"tchinese":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"russian":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"thai":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"japanese":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"portuguese":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"polish":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"danish":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"dutch":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"finnish":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"norwegian":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"swedish":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"hungarian":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"czech":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"romanian":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"turkish":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"brazilian":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"bulgarian":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"greek":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"ukrainian":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"latam":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand.",
+"vietnamese":"Before the card draw phase, put a <span style='font-weight:bold;color:#ffffff;'>Golden Ticket</span> card into your hand."
+},
+"mini_image":{
+
+},
+"large_image":{
+
+},
+"ingame_image":{
+
+},
+"references":[
+{
+"card_id":10216,
+"ref_type":"references"
+}
+]
+
+},
+{
 "card_id":1000,
 "base_card_id":1000,
 "card_type":"Stronghold",
