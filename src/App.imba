@@ -1,5 +1,6 @@
 import CardRow from './CardRow'
 import CardView from './CardView'
+import {cardset_files} from './CardsetFiles'
 
 let languages = {
   english: "English"
@@ -177,9 +178,8 @@ tag App
     query:sub_type:Deed = query:sub_type:Consumable
 
   def build
-    for url in ['./data/card_set_0.79824067E797DFFD5925FE05AB27CF5ACC88723F.json',
-                './data/card_set_1.134088E143B4C697AA334924195E1DFB24EC95C5.json']
-      let res = await window.fetch url
+    for card_setfile in cardset_files
+      let res = await window.fetch "./data/{card_setfile}"
       let json = await res.json
       @sets.push(json:card_set)
 
